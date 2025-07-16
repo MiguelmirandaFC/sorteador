@@ -65,12 +65,12 @@ button {
 }
 
 .btn-adicionar {
-  background-color: #45a049;
+  background-color:#45a049;
   color: white;
 }
 
 .btn-sortear {
-  background-color: #45a049;
+  background-color:#45a049;
   color: white;
   width: 100%;
   margin-bottom: 20px;
@@ -97,8 +97,7 @@ button {
   padding-bottom: 5px;
 }
 
-.participantes,
-.sorteados {
+.participantes, .sorteados {
   background: #f8f9fa;
   border-radius: 10px;
   padding: 20px;
@@ -117,16 +116,51 @@ button {
   font-size: 14px;
   animation: slideIn 0.3s ease;
   position: relative;
-  user-select: none;
 }
 
 .participante-item:hover {
   background-color: #ff3300;
-  transition: background-color 0.3s ease;
 }
-
 .participante-item .remove-btn {
   margin-left: 10px;
   cursor: pointer;
   font-weight: bold;
   opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.participante-item .remove-btn:hover {
+  opacity: 1;
+  background-color: #ff3300;
+}
+
+.sorteados .vencedor {
+  animation: celebration 1s ease-in-out;
+}
+
+.vazio {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}
+
+.btn-excluir {
+  background-color: #ff3300;
+  color: white;
+  font-size: 14px;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.sorteado-item {
+  display: inline-block;
+  background-color: #e7cd35;
+  color: black;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  animation: slideIn 0.3s ease;
+  position: relative;
+}
