@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFEI - Avaliação - Sorteador de Nomes</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteador de Nomes</h1>
+        
+        <div class="input-section">
+            <input type="text" id="nomeInput" placeholder="Digite o nome do participante..." maxlength="50">
+            <button class="btn-adicionar" onclick="adicionar()">Adicionar</button>
+        </div>
+
+        <button class="btn-sortear" id="sortearButton" onclick="sortear()" disabled>Sortear</button>
+
+        <div class="section">
+            <h3>Participantes (<span id="participantesQtd">0</span>)</h3>
+            <div class="participantes" id="participantesDiv">
+                <div class="vazio">Nenhum participante adicionado ainda...</div>
+            </div>
+            <button class="btn-excluir" id="excluirParticipantes" onclick="excluirTodosParticipantes()" style="display: none;">
+                Excluir Participantes
+            </button>
+        </div>
+
+        <div class="section">
+            <h3>Resultado do Sorteio</h3>
+            <div class="sorteados" id="sorteadosDiv">
+                <div class="vazio">Clique em "Sortear" para ver o resultado!</div>
+            </div>
+            <button class="btn-excluir" id="excluirSorteados" onclick="excluirTodosSorteados()" style="display: none;">
+                Excluir Sorteados
+            </button>
+        </div>
+    </div>
+</body>
+</html>
